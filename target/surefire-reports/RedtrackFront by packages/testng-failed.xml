@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [RedtrackFront by packages]" parallel="methods">
+  <test thread-count="2" verbose="0" name="test(failed)" parallel="methods">
+    <classes>
+      <class name="io.redtrack.app.tests.RedtrackCustomDomains">
+        <methods>
+          <include name="getClickURL"/>
+          <include name="goToCampaignPage"/>
+          <include name="findPostback"/>
+          <include name="creatingConversion"/>
+          <include name="parsingURL"/>
+          <include name="findConv"/>
+          <include name="checkingConv"/>
+          <include name="creatingClick"/>
+          <include name="parsingID"/>
+          <include name="openCampaign"/>
+          <include name="checkingPostback"/>
+          <include name="login"/>
+          <include name="closingDriver"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- io.redtrack.app.tests.RedtrackCustomDomains -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [RedtrackFront by packages] -->

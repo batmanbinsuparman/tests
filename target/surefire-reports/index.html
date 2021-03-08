@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-RedtrackFront_by_packages">
+              <span class="suite-name border-failed">RedtrackFront by packages</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RedtrackFront_by_packages">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-RedtrackFront_by_packages">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-RedtrackFront_by_packages">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-RedtrackFront_by_packages">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-RedtrackFront_by_packages">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RedtrackFront_by_packages">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-RedtrackFront_by_packages">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 1 failed,  4 skipped,  8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RedtrackFront_by_packages" class="hide-methods failed suite-RedtrackFront_by_packages"> (hide)</a> <!-- hide-methods failed suite-RedtrackFront_by_packages -->
+                      <a href="#" panel-name="suite-RedtrackFront_by_packages" class="show-methods failed suite-RedtrackFront_by_packages"> (show)</a> <!-- show-methods failed suite-RedtrackFront_by_packages -->
+                    </span>
+                    <div class="method-list-content failed suite-RedtrackFront_by_packages">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="checkingPostback">checkingPostback</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RedtrackFront_by_packages -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-RedtrackFront_by_packages" class="hide-methods skipped suite-RedtrackFront_by_packages"> (hide)</a> <!-- hide-methods skipped suite-RedtrackFront_by_packages -->
+                      <a href="#" panel-name="suite-RedtrackFront_by_packages" class="show-methods skipped suite-RedtrackFront_by_packages"> (show)</a> <!-- show-methods skipped suite-RedtrackFront_by_packages -->
+                    </span>
+                    <div class="method-list-content skipped suite-RedtrackFront_by_packages">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="checkingConv">checkingConv</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="closingDriver">closingDriver</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="findConv">findConv</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="findPostback">findPostback</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-RedtrackFront_by_packages -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RedtrackFront_by_packages" class="hide-methods passed suite-RedtrackFront_by_packages"> (hide)</a> <!-- hide-methods passed suite-RedtrackFront_by_packages -->
+                      <a href="#" panel-name="suite-RedtrackFront_by_packages" class="show-methods passed suite-RedtrackFront_by_packages"> (show)</a> <!-- show-methods passed suite-RedtrackFront_by_packages -->
+                    </span>
+                    <div class="method-list-content passed suite-RedtrackFront_by_packages">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="creatingClick">creatingClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="creatingConversion">creatingConversion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="getClickURL">getClickURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="goToCampaignPage">goToCampaignPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="openCampaign">openCampaign</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="parsingID">parsingID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RedtrackFront_by_packages" title="io.redtrack.app.tests.RedtrackCustomDomains" hash-for-method="parsingURL">parsingURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RedtrackFront_by_packages -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RedtrackFront_by_packages" class="panel RedtrackFront_by_packages">
+          <div class="suite-RedtrackFront_by_packages-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">io.redtrack.app.tests.RedtrackCustomDomains</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingPostback">
+                  </a> <!-- checkingPostback -->
+                  <span class="method-name">checkingPostback</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Postbacks&quot;}
+  (Session info: chrome=73.0.3683.75)
+  (Driver info: chromedriver=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72),platform=Linux 4.4.0-138-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1010:335e:4538:473b%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.5&apos;, java.version: &apos;1.8.0_201&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.68 (47787ec04b6e3..., userDataDir: /tmp/.com.google.Chrome.LIskWc}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:34862}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.75, webStorageEnabled: true}
+Session ID: 1b05bd356a95a53862db1ec2fd4f462d
+*** Element info: {Using=link text, value=Postbacks}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:376)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy6.click(Unknown Source)
+	at io.redtrack.app.other.Navigation.pagePostbacks(Navigation.java:143)
+	at io.redtrack.app.tests.RedtrackCustomDomains.checkingPostback(RedtrackCustomDomains.java:335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RedtrackFront_by_packages-class-failed -->
+          <div class="suite-RedtrackFront_by_packages-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">io.redtrack.app.tests.RedtrackCustomDomains</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkingConv">
+                  </a> <!-- checkingConv -->
+                  <span class="method-name">checkingConv</span>
+                  <div class="stack-trace">java.lang.Throwable: Method RedtrackCustomDomains.checkingConv()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@3327bd23] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closingDriver">
+                  </a> <!-- closingDriver -->
+                  <span class="method-name">closingDriver</span>
+                  <div class="stack-trace">java.lang.Throwable: Method RedtrackCustomDomains.closingDriver()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@3327bd23] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findConv">
+                  </a> <!-- findConv -->
+                  <span class="method-name">findConv</span>
+                  <div class="stack-trace">java.lang.Throwable: Method RedtrackCustomDomains.findConv()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@3327bd23] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="findPostback">
+                  </a> <!-- findPostback -->
+                  <span class="method-name">findPostback</span>
+                  <div class="stack-trace">java.lang.Throwable: Method RedtrackCustomDomains.findPostback()[pri:0, instance:io.redtrack.app.tests.RedtrackCustomDomains@3327bd23] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RedtrackFront_by_packages-class-skipped -->
+          <div class="suite-RedtrackFront_by_packages-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">io.redtrack.app.tests.RedtrackCustomDomains</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="creatingClick">
+                  </a> <!-- creatingClick -->
+                  <span class="method-name">creatingClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="creatingConversion">
+                  </a> <!-- creatingConversion -->
+                  <span class="method-name">creatingConversion</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getClickURL">
+                  </a> <!-- getClickURL -->
+                  <span class="method-name">getClickURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToCampaignPage">
+                  </a> <!-- goToCampaignPage -->
+                  <span class="method-name">goToCampaignPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openCampaign">
+                  </a> <!-- openCampaign -->
+                  <span class="method-name">openCampaign</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="parsingID">
+                  </a> <!-- parsingID -->
+                  <span class="method-name">parsingID</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="parsingURL">
+                  </a> <!-- parsingURL -->
+                  <span class="method-name">parsingURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RedtrackFront_by_packages-class-passed -->
+        </div> <!-- panel RedtrackFront_by_packages -->
+        <div panel-name="test-xml-RedtrackFront_by_packages" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/dmytropetryshchak/IdeaProjects/frontredrtack/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;RedtrackFront by packages&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;2&quot; name=&quot;test&quot; parallel=&quot;methods&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;io.redtrack.app.tests.RedtrackCustomDomains&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test --&gt;
+&lt;/suite&gt; &lt;!-- RedtrackFront by packages --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RedtrackFront_by_packages" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RedtrackFront by packages</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RedtrackFront_by_packages" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RedtrackFront by packages</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RedtrackFront_by_packages" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RedtrackFront by packages</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RedtrackFront_by_packages');
+function tableData_RedtrackFront_by_packages() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkingPostback')
+data.setCell(0, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(0, 3, 34264);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'creatingClick')
+data.setCell(1, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(1, 3, 14664);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'openCampaign')
+data.setCell(2, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(2, 3, 12250);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'creatingConversion')
+data.setCell(3, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(3, 3, 10289);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'login')
+data.setCell(4, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(4, 3, 9035);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'goToCampaignPage')
+data.setCell(5, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(5, 3, 8698);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'parsingURL')
+data.setCell(6, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(6, 3, 8063);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'getClickURL')
+data.setCell(7, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(7, 3, 3198);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'parsingID')
+data.setCell(8, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(8, 3, 3002);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'closingDriver')
+data.setCell(9, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'findPostback')
+data.setCell(10, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'findConv')
+data.setCell(11, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkingConv')
+data.setCell(12, 2, 'io.redtrack.app.tests.RedtrackCustomDomains')
+data.setCell(12, 3, 0);
+window.suiteTableData['RedtrackFront_by_packages']= { tableData: data, tableDiv: 'times-div-RedtrackFront_by_packages'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-RedtrackFront_by_packages">
+              </div> <!-- times-div-RedtrackFront_by_packages -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RedtrackFront_by_packages" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RedtrackFront by packages</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RedtrackFront_by_packages" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RedtrackFront_by_packages" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">io.redtrack.app.tests.RedtrackCustomDomains</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">init</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">login</span>
+                <span class="method-start">3767 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">goToCampaignPage</span>
+                <span class="method-start">12803 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">openCampaign</span>
+                <span class="method-start">21502 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getClickURL</span>
+                <span class="method-start">33753 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">creatingClick</span>
+                <span class="method-start">36952 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">parsingURL</span>
+                <span class="method-start">51617 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">creatingConversion</span>
+                <span class="method-start">59681 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">parsingID</span>
+                <span class="method-start">69971 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkingPostback</span>
+                <span class="method-start">72974 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
